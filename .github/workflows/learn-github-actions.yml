@@ -4,7 +4,9 @@ name: learn-github-actions
 
 # Controls when the workflow will run
 # Triggers the workflow on push request event
-on: [push]
+on: 
+  schedule:
+    - cron: '*/1 * * * *'
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
